@@ -18,21 +18,21 @@ app.UseSession();
 
 -- Implementing DB First:-
 
-1st Step:
-Install 3 Packages in your ASP.NET Core Application
-Microsoft.EntityFrameworkCore.SqlServer
-Microsoft.EntityFrameworkCore.Design 
-Microsoft.EntityFrameworkCore.Tools
+1st Step:</br>
+Install 3 Packages in your ASP.NET Core Application</br>
+Microsoft.EntityFrameworkCore.SqlServer</br>
+Microsoft.EntityFrameworkCore.Design </br>
+Microsoft.EntityFrameworkCore.Tools</br>
 
-2nd Step:
-Execute a command for Scaffold DbContext in package manager console.
+2nd Step:</br>
+Execute a command for Scaffold DbContext in package manager console.</br>
 
 Scaffold-DbContext "Server=servername; database=databasename; trusted_connection=true" Mircosoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
-Above command will generate model class and DbContext class automatically.
+Above command will generate model class and DbContext class automatically.</br>
 
-3ed Step:
-Move Connection String from DbContext class to appsetting.json file 
+3ed Step:</br>
+Move Connection String from DbContext class to appsetting.json file </br>
 
-4th Step:
+4th Step:</br>
 Registering Connection String in Program.cs file
